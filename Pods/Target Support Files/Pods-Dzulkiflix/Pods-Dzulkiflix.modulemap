@@ -1,0 +1,6 @@
+framework module Pods_Dzulkiflix {
+  umbrella header "Pods-Dzulkiflix-umbrella.h"
+
+  export *
+  module * { export * }
+}
