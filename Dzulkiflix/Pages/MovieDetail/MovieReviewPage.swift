@@ -59,11 +59,11 @@ extension MovieReviewViewController : UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (indexPath.row % 2 == 1) {
-            cell.contentView.backgroundColor = UIColor.systemGray6
-        } else {
-            cell.contentView.backgroundColor = UIColor.white
-        }
+//        if (indexPath.row % 2 == 1) {
+//            cell.contentView.backgroundColor = UIColor.systemGray6
+//        } else {
+//            cell.contentView.backgroundColor = UIColor.white
+//        }
         if (indexPath.row == reviews.count - 1) {
             page += 1
             fetchData()
