@@ -16,27 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-pz-aQv">
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-pz-aQv">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.79215686269999996" green="0.69019607839999997" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="separatorInset" minX="110" minY="0.0" maxX="16" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Z9b-O1-jtf">
-                                    <rect key="frame" x="0.0" y="199.00000034679067" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="199.50000034679067" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieListTableCell" rowHeight="150" id="1Hl-15-SeU" customClass="MovieListTableCell" customModule="Dzulkiflix" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="150"/>
+                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieListTableCell" id="1Hl-15-SeU" customClass="MovieListTableCell" customModule="Dzulkiflix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="150.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Hl-15-SeU" id="hCq-jc-5mG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="opi-WJ-9QC">
-                                                    <rect key="frame" x="16" y="16" width="78.5" height="118"/>
+                                                    <rect key="frame" x="16" y="16" width="79" height="118.5"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="118" id="1eF-jV-H40">
+                                                            <variation key="widthClass=regular" constant="180"/>
+                                                        </constraint>
                                                         <constraint firstAttribute="width" secondItem="opi-WJ-9QC" secondAttribute="height" multiplier="2:3" id="PFz-Fr-gfM"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
@@ -46,19 +48,25 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Black Widow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-ac-TDt">
-                                                    <rect key="frame" x="110.5" y="16" width="287.5" height="21"/>
+                                                    <rect key="frame" x="111" y="16" width="287" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djT-kb-zOH">
-                                                    <rect key="frame" x="110.5" y="41" width="207.5" height="16"/>
+                                                    <rect key="frame" x="111" y="41" width="207" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
                                                 </label>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wR9-QT-Oaa" customClass="CircleProgressView" customModule="Dzulkiflix" customModuleProvider="target">
-                                                    <rect key="frame" x="334" y="43" width="64" height="64"/>
+                                                    <rect key="frame" x="334" y="43.5" width="64" height="64"/>
                                                     <color key="backgroundColor" red="0.031372549019607843" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="wR9-QT-Oaa" secondAttribute="height" multiplier="1:1" id="QH8-IQ-ZRj"/>
@@ -83,7 +91,9 @@
                                                 <constraint firstItem="TaM-ac-TDt" firstAttribute="leading" secondItem="opi-WJ-9QC" secondAttribute="trailing" constant="16" id="6m6-rt-Uv0"/>
                                                 <constraint firstItem="opi-WJ-9QC" firstAttribute="top" secondItem="hCq-jc-5mG" secondAttribute="top" constant="16" id="8ZA-Q2-JGz"/>
                                                 <constraint firstItem="mPL-SL-glm" firstAttribute="centerY" secondItem="wR9-QT-Oaa" secondAttribute="centerY" id="IKk-cK-nED"/>
-                                                <constraint firstItem="djT-kb-zOH" firstAttribute="top" secondItem="TaM-ac-TDt" secondAttribute="bottom" constant="4" id="J1I-3k-FwN"/>
+                                                <constraint firstItem="djT-kb-zOH" firstAttribute="top" secondItem="TaM-ac-TDt" secondAttribute="bottom" constant="4" id="J1I-3k-FwN">
+                                                    <variation key="widthClass=regular" constant="16"/>
+                                                </constraint>
                                                 <constraint firstItem="wR9-QT-Oaa" firstAttribute="leading" secondItem="djT-kb-zOH" secondAttribute="trailing" constant="16" id="OuF-WA-Xjj"/>
                                                 <constraint firstAttribute="trailing" secondItem="wR9-QT-Oaa" secondAttribute="trailing" constant="16" id="Q8r-74-mfH"/>
                                                 <constraint firstAttribute="bottom" secondItem="opi-WJ-9QC" secondAttribute="bottom" constant="16" id="XaW-C4-ehA"/>

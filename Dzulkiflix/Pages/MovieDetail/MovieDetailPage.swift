@@ -29,6 +29,7 @@ class MovieDetailViewController : UITabBarController {
         let trailerVC = viewControllers?[2] as? MovieTrailerViewController
         trailerVC?.movieId = movie?.id
         
+        // preload content
         viewControllers?.forEach { let _ = $0.view }
     }
 }
